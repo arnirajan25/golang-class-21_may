@@ -1,0 +1,28 @@
+package main
+
+import "fmt"
+
+type Rectangle struct {
+	length   int
+	breadth  int
+}
+
+func (rect *Rectangle) Perimeter() int {
+	return 2 * (rect.length + rect.breadth)
+}
+
+func (rect *Rectangle) Area() int {
+	return rect.length * rect.breadth
+}
+
+func main() {
+	var rect Rectangle
+
+	fmt.Print("Enter the length and breadth of a rectangle: ")
+	fmt.Scanln(&rect.length, &rect.breadth)
+
+	fmt.Printf("Area = %d\n", rect.Area())
+	fmt.Printf("Perimeter = %d\n", rect.Perimeter())
+}import "fmt"
+package main{
+
